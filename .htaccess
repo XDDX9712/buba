@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# Redirigir a la URL sin /index.php
+RewriteCond %{REQUEST_URI} ^/index\.php$
+RewriteRule ^(.*)$ / [R=301,L]
+</IfModule>
+
